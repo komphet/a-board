@@ -9,6 +9,7 @@ const SignIn = () => {
   const navigateToHome = () => {
     router.push('/home')
   };
+  
   return (
     <div
       className="flex h-screen w-full flex-col-reverse md:flex-row"

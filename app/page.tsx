@@ -9,5 +9,5 @@ export default function Home() {
     router.push('/login')
   }, []);
 
-  return null; // Or a loading spinner
+  return null;
 }
