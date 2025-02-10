@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React from "react";
 
@@ -7,9 +8,9 @@ const SignIn = () => {
   const router = useRouter();
 
   const navigateToHome = () => {
-    router.push('/member/home')
+    router.push("/member/home");
   };
-  
+
   return (
     <div
       className="flex h-screen w-full flex-col-reverse md:flex-row"
@@ -37,13 +38,20 @@ const SignIn = () => {
         className="flex items-center justify-center  p-6 md:flex-1 md:rounded-l-lg"
         style={{ backgroundColor: "#2B5F44" }}
       >
-        <div className="text-center">
-          <img
+        <div className="flex flex-col items-center">
+          <Image
+          height={200}
+          width={200}
             src="/images/board.png"
             alt="Board illustration"
-            className="w-40 h-40 mx-auto mb-4"
+            className="mx-auto mb-4"
           />
-          <p className="text-white italic">a Board</p>
+          <Image
+            height={40}
+            width={100}
+            alt="Your Company"
+            src="/images/logo.png"
+          />
         </div>
       </div>
     </div>
