@@ -140,7 +140,7 @@ export default function MemberLayout({
 
               <aside
                 style={{ backgroundColor: "#243831", color: "#D8E9E4" }}
-                className={`fixed top-0 right-0 w-64 h-screen  p-5 transform transition-transform z-50  ${
+                className={`fixed top-0 right-0 w-64 h-screen  p-5 transform transition-transform z-50 flex justify-between flex-col  ${
                   isOpen ? "translate-x-0" : "translate-x-full"
                 }`}
               >
@@ -166,6 +166,14 @@ export default function MemberLayout({
                       </a>
                     );
                   })}
+                </nav>
+                <nav className="space-y-4">
+                  <a
+                    href="/login"
+                    className="block px-3 py-2 hover:bg-gray-600 rounded text-center"
+                  >
+                    Sign out
+                  </a>
                 </nav>
               </aside>
             </div>
