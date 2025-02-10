@@ -7,7 +7,7 @@ const SignIn = () => {
   const router = useRouter();
 
   const navigateToHome = () => {
-    router.push('/home')
+    router.push('/member/home')
   };
   
   return (
